@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 span {
     font-style: oblique;
 }
@@ -18,6 +23,7 @@ p {
     font-weight: bold;
 }
 
+/* Правая панель */
 .img-container {
     float: right;
     border-style:solid;
@@ -53,4 +59,61 @@ td {
     font-family: Arial;
     font-size: 14px;
     padding-top: 5px;
+}
+
+/* Верхняя панель */
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+}
+
+.nav-container>nav>ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-container>nav>ul>li>a {
+    display: block;
+    padding: 5px;
+    border-style: solid;
+    border-width: 0.5px;
+}
+
+@media (max-width: 900px) {
+    .nav-container {
+        flex-direction: column;
+    }
+}
+
+/* Боковая панель */
+.page {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    width: 18%;
+    background-color:aquamarine ;
+}
+
+.text-page {
+    padding-left: 15px;
+}
+
+.section {
+    width: 78%;
+}
+
+.header>ol {
+    list-style: none;
+    border-bottom-style: solid;
+    border-width: o.5px;
+    margin: 10px;
+    padding: 0;
+    padding-bottom: 10px;
 }
